@@ -1,4 +1,4 @@
-# Unclosure [![Build Status](https://travis-ci.com/mpyw/unclosure.svg?branch=master)](https://travis-ci.com/mpyw/unclosure) [![Coverage Status](https://coveralls.io/repos/github/mpyw/unclosure/badge.svg?branch=master)](https://coveralls.io/github/mpyw/unclosure?branch=master) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/mpyw/unclosure/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/mpyw/unclosure/?branch=master)
+# Unclosure [![Build Status](https://github.com/mpyw/unclosure/actions/workflows/ci.yml/badge.svg?branch=master)] [![Coverage Status](https://coveralls.io/repos/github/mpyw/unclosure/badge.svg?branch=master)](https://coveralls.io/github/mpyw/unclosure?branch=master) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/mpyw/unclosure/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/mpyw/unclosure/?branch=master)
 
 Closure unwrapper especially suited for Laravel PDO.
 
