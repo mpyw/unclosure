@@ -4,7 +4,7 @@ Closure unwrapper especially suited for Laravel PDO.
 
 ## Requirements
 
-- PHP: ^7.3 || ^8.0
+- PHP: `^7.3 || ^8.0`
 
 ## Installing
 
