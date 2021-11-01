@@ -111,7 +111,7 @@ Call `$callback($value, ...$args)` or wrap its call into `Closure`.
 #### (A) `$value`
 
 ```php
-mixed $value(mixed ...$initialArgs)
+$value(mixed ...$initialArgs): mixed
 ```
 
 | Name | Type | Description |
@@ -122,7 +122,7 @@ mixed $value(mixed ...$initialArgs)
 #### (B) `$callback`
 
 ```php
-mixed $callback(mixed $value, ...$args)
+$callback(mixed $value, ...$args): mixed
 ```
 
 | Name | Type | Description |
@@ -134,7 +134,7 @@ mixed $callback(mixed $value, ...$args)
 #### (C) Return Value
 
 ```php
-mixed *(mixed ...$initialArgs)
+*(mixed ...$initialArgs): mixed
 ```
 
 | Name | Type | Description |
@@ -145,8 +145,8 @@ mixed *(mixed ...$initialArgs)
 ## `Value::withEffect()`<br>`Value::withEffectForEach()`
 
 ```php
-static mixed withEffect(mixed|Closure &$value, callable $configurator, callable $callback, mixed ...$args)
-static mixed withEffectForEach((mixed|Closure)[] &$values, callable $configurator, callable $callback, mixed ...$args)
+public static withEffect(mixed|Closure &$value, callable $configurator, callable $callback, mixed ...$args): mixed
+public static withEffectForEach((mixed|Closure)[] &$values, callable $configurator, callable $callback, mixed ...$args): mixed
 ```
 
 Call `$callback(...$args)`, watching new assignment on `&$value`. **You can conditionally unwrap `$value` in your `$callback` by yourself.**
@@ -170,7 +170,7 @@ Call `$callback(...$args)`, watching new assignment on `&$value`. **You can cond
 #### (A) `&$value`
 
 ```php
-mixed *()
+*(): mixed
 ```
 
 | Name | Type | Description |
@@ -180,7 +180,7 @@ mixed *()
 #### (B) `$configurator`
 
 ```php
-?callable $configurator(mixed $value)
+$configurator(mixed $value): ?callable
 ```
 
 | Name | Type | Description |
@@ -191,7 +191,7 @@ mixed *()
 #### (C) `$configurator` Return Value
 
 ```php
-void *(mixed $value)
+*(mixed $value): void
 ```
 
 | Name | Type | Description |
@@ -201,7 +201,7 @@ void *(mixed $value)
 #### (D) `$callback`
 
 ```php
-mixed $callback(...$args)
+$callback(...$args): mixed
 ```
 
 | Name | Type | Description |
