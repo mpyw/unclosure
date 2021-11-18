@@ -290,6 +290,7 @@ class SimpleValueTest extends TestCase
             function ($value) {
                 ++$value->value;
             },
+            // @phpstan-ignore-next-line: unused use $values
             function ($arg) use (&$values) {
                 return $arg;
             },

@@ -10,8 +10,6 @@ class Value
      * Handle effect with callback.
      *
      * @param  \Closure|mixed &$value
-     * @param  callable       $configurator
-     * @param  callable       $callback
      * @param  mixed          ...$args
      * @return mixed
      */
@@ -42,8 +40,6 @@ class Value
      * Handle effect with callback for each value.
      *
      * @param  \Closure[]|mixed[] &$values
-     * @param  callable           $configurator
-     * @param  callable           $callback
      * @param  mixed              ...$args
      * @return mixed
      */
@@ -67,7 +63,6 @@ class Value
      * Decorate value with callback.
      *
      * @param  \Closure|mixed $value
-     * @param  callable       $callback
      * @param  mixed          ...$args
      * @return \Closure|mixed
      */

@@ -1,0 +1,5 @@
+services:
+    -
+        class: Mpyw\Unclosure\PHPStan\CallableReturnTypeExtension
+        tags:
+            - phpstan.broker.dynamicStaticMethodReturnTypeExtension
