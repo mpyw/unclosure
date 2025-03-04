@@ -59,6 +59,7 @@ class SimpleValueTest extends TestCase
         );
 
         $this->assertSame(123, $result);
+        // @phpstan-ignore property.nonObject
         $this->assertSame(1, $value->value);
     }
 
@@ -179,7 +180,9 @@ class SimpleValueTest extends TestCase
         );
 
         $this->assertSame(123, $result);
+        // @phpstan-ignore property.nonObject
         $this->assertSame(1, $values[0]->value);
+        // @phpstan-ignore property.nonObject
         $this->assertSame(1001, $values[1]->value);
     }
 
@@ -203,7 +206,9 @@ class SimpleValueTest extends TestCase
         );
 
         $this->assertSame(123, $result);
+        // @phpstan-ignore property.nonObject
         $this->assertSame(2, $values[0]->value);
+        // @phpstan-ignore property.nonObject
         $this->assertSame(1002, $values[1]->value);
     }
 
@@ -232,7 +237,6 @@ class SimpleValueTest extends TestCase
         );
 
         $this->assertSame(123, $result);
-        $this->assertIsArray($values);
         $this->assertInstanceOf(stdClass::class, $values[0]);
         $this->assertInstanceOf(stdClass::class, $values[1]);
         $this->assertSame(1, $values[0]->value);
@@ -268,7 +272,6 @@ class SimpleValueTest extends TestCase
         );
 
         $this->assertSame(123, $result);
-        $this->assertIsArray($values);
         $this->assertInstanceOf(stdClass::class, $values[0]);
         $this->assertInstanceOf(stdClass::class, $values[1]);
         $this->assertSame(2, $values[0]->value);
@@ -298,7 +301,6 @@ class SimpleValueTest extends TestCase
         );
 
         $this->assertSame(123, $result);
-        $this->assertIsArray($values);
         $this->assertInstanceOf(Closure::class, $values[0]);
         $this->assertInstanceOf(Closure::class, $values[1]);
         $this->assertSame(0, $values[0]()->value);

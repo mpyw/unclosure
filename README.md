@@ -4,10 +4,13 @@ Closure unwrapper especially suited for Laravel PDO.
 
 ## Requirements
 
-| Package | Version | Mandatory |
-|:---|:---|:---:|
-| PHP | <code>^7.4 &#124;&#124; ^8.0</code> | ✅ |
-| PHPStan | <code>&gt;=1.1</code> | |
+| Package | Version               | Mandatory |
+|:---|:----------------------|:---:|
+| PHP | <code>^8.2</code>     | ✅ |
+| PHPStan | <code>&gt;=2.0</code> | |
+
+> [!NOTE]
+> Older versions have outdated dependency requirements. If you cannot prepare the latest environment, please refer to past releases.
 
 ## Installing
 
